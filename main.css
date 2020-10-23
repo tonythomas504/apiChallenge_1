@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.pokemonCard{
+    background-color: red;
+    width: 350px;
+    height: 400px;
+    margin: 10%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.pokeContainer{
+    background: linear-gradient(to right, pink, purple)
+}
+
+.pokebackground{
+   text-align: center;
+}
+
+#imageOne{
+ height: 160px;
+ width: 160px;
+ margin: 35px;
+ transition: transform 0.4s ease-in-out;
+}
+
+#imageTwo{
+    height: 160px;
+    width: 160px;
+    margin: 35px;
+    transition: transform 0.4s ease-in-out;
+}
+#imageThree{
+    height: 160px;
+ width: 160px;
+ margin: 35px;
+ transition: transform 0.4s ease-in-out;
+}
+#imageFour{
+    height: 160px;
+ width: 160px;
+ margin: 35px;
+ transition: transform 0.4s ease-in-out;
+}
+
+#imageFive{
+    height: 160px;
+ width: 160px;
+ margin: 35px;
+ transition: transform 0.4s ease-in-out;
+}
+
+#imageSix{
+    height: 160px;
+    width: 160px;
+    margin: 35px;
+    transition: transform 0.4s ease-in-out;
+}
+
+#imageSeven{
+    height: 160px;
+    width: 160px;
+    margin: 35px;
+    transition: transform 0.4s ease-in-out;
+}
+
+#imageEight{
+    height: 160px;
+    width: 160px;
+    margin: 35px;
+    transition: transform 0.4s ease-in-out;
+}
+#imageNine{
+    height: 160px;
+ width: 160px;
+ margin: 35px;
+ transition: transform 0.4s ease-in-out;
+}
+
+#imageTen{
+    height: 160px;
+ width: 160px;
+ margin: 35px;
+ transition: transform 0.4s ease-in-out;
+}
