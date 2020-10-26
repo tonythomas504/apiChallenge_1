@@ -1,34 +1,631 @@
-body {
+.jumbotron{
+    position: relative;
+    width: 100%;
+    color: red;
+    background: linear-gradient(to right, yellow, blue);  ;
+}
+
+
+body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-items: space-between;
+
 
 }
 
+/* Pikachu */
+
+.scene {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 600px;
+    padding: inherit;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__face--front {
+    background: yellow;
+    width: 350px;
+    height: 400px;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+
+  }
+  
+  .card__face--back {
+    background: yellow;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+  }
+
+/* Charmander */
+.scene-ch {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 600px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .card-ch {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-ch.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__facech {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__facech--front-ch {
+    background: orangered;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+
+  }
+  
+  .card__facech--back-ch {
+    background: orangered;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+
+  }
+/* Squirtle */
+
+.scene-sq {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 600px;
+    margin-left: 62px;
+    margin-right: 70px;
+  }
+  
+  .card-sq {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-sq.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__facesq {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__facesq--front-sq {
+    background: lightblue;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+
+  }
+  
+  .card__facesq--back-sq {
+    background: lightblue;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+  }
+
+
+/* JigglyPuff */
+
+
+.scene-jp {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 600px;
+    margin-left: -19px;
+}
+  .card-jp {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-jp.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__facejp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__facejp--front-jp {
+    background:#e84e6b;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+
+  }
+  
+  .card__facejp--back-jp {
+    background:#e84e6b;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+  }
+
+/* Machop */
+
+.scene-mp {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .card-mp {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-mp.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__facemp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__facemp--front-mp {
+    background:rgb(246, 190, 118);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+
+  }
+  
+  .card__facemp--back-mp {
+    background:rgb(246, 190, 118);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+  }
+
+  /* Slowpoke */
+
+  .scene-sp {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 600px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .card-sp {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-sp.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__facesp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__facesp--front-sp {
+    background: rgb(193, 53, 193);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+
+  }
+  
+  .card__facesp--back-sp {
+    background: rgb(193, 53, 193);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+  }
+
+  /* Drowzee */
+
+  .scene-dz {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 600px;
+    margin-left: 30px;
+    margin-right: 70px;
+  }
+  
+  .card-dz {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-dz.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__facedz {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__facedz--front-dz {
+    background: violet;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+
+  }
+  
+  .card__facedz--back-dz {
+    background: violet;
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+  }
+
+/* Mewtwo */
+.scene-mo {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 600px;
+    margin-left: -19px;
+  }
+  
+  .card-mo {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-mo.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__facemo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__facemo--front-mo {
+    background: rgb(161, 65, 161);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    height: 400px;
+
+  }
+  
+  .card__facemo--back-mo {
+    background: rgb(161, 65, 161);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+  }
+
+/* Rhyhorn */
+
+
+.scene-ry {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .card-ry {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-ry.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__facery {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__facery--front-ry {
+    background:rgb(246, 190, 118);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+
+  }
+  
+  .card__facery--back-ry {
+    background:rgb(246, 190, 118);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+  }
+
+/* Ivysaur */
+
+  .scene-iv {
+    width: 350px;
+    height: 400px;
+    margin: 40px 0;
+    perspective: 1000px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .card-iv {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-iv.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__faceiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card__faceiv--front-iv {
+    background: rgb(52, 217, 52);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+
+  }
+  
+  .card__faceiv--back-iv {
+    background: rgb(52, 217, 52);
+    border: 20px solid rgb(212, 212, 20);
+    border-radius: 15px;;
+    transform: rotateY(180deg);
+  }
+
+
+/* Pokemon card styling ends */
+
+
+
+
+  ul{
+    position: absolute; 
+    color: black;
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 30px;
+    backface-visibility: hidden;
+  }
+
+.first-list {
+    color: black;
+    list-style-type: none;
+    font-size: 15px;
+    margin-top: -30px;
+    margin-left: -8px;
+    
+
+}
+.attributes {
+    color: black;
+    list-style-type: none;
+    font-size: 15px;
+    margin: -30px;
+    margin-left: 140px;
+
+}
+
+
 .pokemonCard{
+    position: relative;
     background-color: red;
     width: 350px;
     height: 400px;
     margin: 10%;
     padding: 10px;
     border-radius: 15px;
+    transition: 0.4s ease-in-out;
 }
 
-.pokeContainer{
+
+/* .pokeContainer{
     background: linear-gradient(to right, pink, purple)
-}
+} */
 
 .pokebackground{
    text-align: center;
 }
 
-#imageOne{
- height: 160px;
- width: 160px;
- margin: 35px;
- transition: transform 0.4s ease-in-out;
+img{
+    height: 200px;
+    width: 200px;
+    margin: 35px;
+    border: 2px solid;
+    border-radius: 15;
+    background: linear-gradient(to right, pink, purple);  
 }
 
+/* #imageOne{
+ height: 200px;
+ width: 200px;
+ margin: 35px;
+ border: 2px solid;
+ border-radius: 15;
+ background: linear-gradient(to right, pink, purple);
+
+} */
+/* 
 #imageTwo{
     height: 160px;
     width: 160px;
@@ -87,4 +684,4 @@ body {
  width: 160px;
  margin: 35px;
  transition: transform 0.4s ease-in-out;
-}
+} */
